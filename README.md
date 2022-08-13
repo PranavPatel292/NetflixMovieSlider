@@ -1,71 +1,30 @@
-# Getting Started with Create React App
+# the Netflix movie slider clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ever since I have seen Netflix's movie slider, I was fascinated and forthwith decided to make one for my-self. Netflix's version of the movie slider is kind of different from other competitors. Whereas the Prime Video's movie slider sends you to the first listing item when you reach the end of the movie listing, Netflix's implementation is quite distinctive. It almost feels like an infinite loop which does roll back to the fist movie item but in a much counterintuitive way. Just play with the slider on Netflix and you'll get an idea.
 
-## Available Scripts
 
-In the project directory, you can run:
+# how the Netflix's slider works
 
-### `npm start`
+I had to reverse engineer Netflix's website to see how the slider logic works and this is what I have found. So basically they show fix amount of div tags which are always there on the page but only handful of them are actually rendered on the screen while others are kept as hidden (I called them as supporting divs from now on, and the one which shows on the screen, I'll call them active ones) by some css tricks. Then when you click the Next or Previous button, the animation occurs based on the button you clicked, and this will give you the current movie list (the active divs, as per my analogy). Subsequently, the content of the supporting divs are updated with the new next and previous movie list. See the video attached below to have an idea of how the logic works!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+https://user-images.githubusercontent.com/42827820/184468387-586d0a4a-9af8-4db8-baa1-9b0ef03bbc86.mp4
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# how my logic works
 
-### `npm run build`
+So when I started working on the project and was doing some brainstorming I had an idea that is pretty the base of this entire project. I have used the [Doubly Link List](https://www.geeksforgeeks.org/doubly-linked-list/) to implement the Netflix movie sider as it has the next and prev pointers which you can manipulate to display the items on the relevant items on the screen.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+So the file called D_Link_List.js is what creates this doubly link list which then sends an head node to the app.js file. From then this head node can be used to fabricate the different divs which then show the different contents on the screen. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# note
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I am not an expert of the CSS and this is just an inspiration project so if you end up deciding to make one please make sure to use your own creativity and make this project as efficient as possible. I would love to see your work so please just inform me here or into my email address: - pranav.patel292@gmail.com. 
 
-### `npm run eject`
+# future plan
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Make a package for this slider/carousel. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# demo of the project!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# NetflixMovieSlider
+https://user-images.githubusercontent.com/42827820/184468406-c6ecab84-3732-4d46-8e34-55c9dbff61f8.mov
