@@ -19,7 +19,7 @@ So the file called D_Link_List.js is what creates this doubly link list which th
 
 # note
 
-I am not an expert of the CSS and this is just an inspiration project so if you end up deciding to make one please make sure to use your own creativity and make this project as efficient as possible. I would love to see your work so please just inform me here or into my email address: - pranav.patel292@gmail.com. 
+I am not an expert of the CSS and this is just an inspiration project so if you end up deciding to make one please make sure to use your own creativity and make this project as efficient as possible. I would love to see your work so please just share your work with me here or into my email address: - pranav.patel292@gmail.com. 
 
 # future plan
 
