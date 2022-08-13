@@ -11,7 +11,7 @@ I had to reverse engineer Netflix's website to see how the slider logic works an
 https://user-images.githubusercontent.com/42827820/184468387-586d0a4a-9af8-4db8-baa1-9b0ef03bbc86.mp4
 
 
-# how my logic works
+# how this project's logic works
 
 So when I started working on the project and was doing some brainstorming I had an idea that is pretty the base of this entire project. I have used the [Doubly Link List](https://www.geeksforgeeks.org/doubly-linked-list/) to implement the Netflix movie sider as it has the next and prev pointers which you can manipulate to display the items on the relevant items on the screen.
 
