@@ -15,7 +15,7 @@ https://user-images.githubusercontent.com/42827820/184468387-586d0a4a-9af8-4db8-
 
 So when I started working on the project and was doing some brainstorming I had an idea that is pretty the base of this entire project. I have used the [Doubly Link List](https://www.geeksforgeeks.org/doubly-linked-list/) to implement the Netflix movie sider as it has the next and prev pointers which you can manipulate to display the items on the relevant items on the screen.
 
-So the file called D_Link_List.js is what creates this doubly link list which then sends an head node to the app.js file. From then this head node can be used to fabricate the different divs which then show the different contents on the screen. 
+So the file called [D_Link_List.js](https://github.com/PranavPatel292/NetflixMovieSlider/blob/main/src/D_LinkList.js) is what creates this doubly link list which then sends an head node to the app.js file. From then this head node can be used to fabricate the different divs which then show the different contents on the screen. 
 
 # note
 
