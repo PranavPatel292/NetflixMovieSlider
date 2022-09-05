@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./App.css";
 
 import {
   makeLinkList,
@@ -160,13 +161,13 @@ function App() {
   };
 
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full overflow-hidden ">
       <div className="">
         {/* silder container */}
         <div className={`flex overflow-x-scroll `}>
           {/* slider */}
           <div
-            className={`flex items-center ${
+            className={`flex items-center text-white ${
               animation
                 ? `${
                     !isFirstClick
@@ -194,21 +195,21 @@ function App() {
             </div>
 
             <div className="w-[300px] h-[200px] m-9 bg-green-400 text-center font-bold relative flex justify-center items-center rounded-2xl">
-              <h1 id="movie-3">{third}</h1>
+              <h1 id="movie-3 ">{third}</h1>
             </div>
 
             <div className="w-[300px] h-[200px] m-9 bg-green-400 text-center font-bold relative flex justify-center items-center rounded-2xl">
-              <h1 id="movie-4">{fourth}</h1>
+              <h1 id="movie-4 ">{fourth}</h1>
             </div>
 
             {/* current movie slider */}
 
             <div className="w-[300px] h-[200px] m-9 bg-green-400 text-center font-bold relative flex justify-center items-center rounded-2xl">
-              <h1 id="movie-5">{fifth}</h1>
+              <h1 id="movie-5 ">{fifth}</h1>
             </div>
 
             <div className="w-[300px] h-[200px] m-9 bg-green-400 text-center font-bold relative flex justify-center items-center rounded-2xl">
-              <h1 id="movie-6">{six}</h1>
+              <h1 id="movie-6 ">{six}</h1>
             </div>
 
             <div className="w-[300px] h-[200px] m-9 bg-green-400 text-center font-bold relative flex justify-center items-center rounded-2xl">
@@ -216,32 +217,32 @@ function App() {
             </div>
 
             <div className="w-[300px] h-[200px] m-9 bg-green-400 text-center font-bold relative flex justify-center items-center rounded-2xl">
-              <h1 id="movie-8">{eight}</h1>
+              <h1 id="movie-8 ">{eight}</h1>
             </div>
 
             {/* next movie slider */}
 
             <div className="w-[300px] h-[200px] m-9 bg-green-400 text-center font-bold relative flex justify-center items-center rounded-2xl">
-              <h1 id="movie-9">{nine}</h1>
+              <h1 id="movie-9 ">{nine}</h1>
             </div>
 
             <div className="w-[300px] h-[200px] m-9 bg-green-400 text-center font-bold relative flex justify-center items-center rounded-2xl">
-              <h1 id="movie-10">{ten}</h1>
+              <h1 id="movie-10 ">{ten}</h1>
             </div>
 
             <div className="w-[300px] h-[200px] m-9 bg-green-400 text-center font-bold relative flex justify-center items-center rounded-2xl">
-              <h1 id="movie-11">{eleven}</h1>
+              <h1 id="movie-11 ">{eleven}</h1>
             </div>
 
             <div className="w-[300px] h-[200px] m-9 bg-green-400 text-center font-bold relative flex justify-center items-center rounded-2xl">
-              <h1 id="movie-12">{twelve}</h1>
+              <h1 id="movie-12 ">{twelve}</h1>
             </div>
           </div>
         </div>
 
         {/* button */}
         <button
-          className="border-2 p-3 mt-10 ml-10 absolute rounded-2xl"
+          className="border-2 p-3 mt-10 ml-10 absolute rounded-2xl text-white"
           onClick={handleForwardClick}
         >
           Next
@@ -249,12 +250,18 @@ function App() {
 
         {!isFirstClick && (
           <button
-            className="border-2 p-3 mt-10  absolute rounded-2xl ml-36"
+            className="border-2 p-3 mt-10  absolute rounded-2xl ml-36 text-white"
             onClick={handleBackClick}
           >
             Back
           </button>
         )}
+
+        <div className="mt-64 w-full flex justify-center items-center">
+          <h1 className="text-white text-5xl font-mono">
+            No resposive design yet
+          </h1>
+        </div>
       </div>
     </div>
   );
